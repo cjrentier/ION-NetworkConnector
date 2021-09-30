@@ -1,5 +1,5 @@
-# IONAPI-Presentations
-This repository contains multiple recordings to demo specific Infor ION API topics
+# ION - Network Connector
+This repository contains recordings to demo the ION Network Connector
 
 - Infor OS - ION Network Connectors V1: 
   
