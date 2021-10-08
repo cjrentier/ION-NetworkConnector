@@ -35,9 +35,11 @@ For Infor Employees:
 * Download *.ionapi file
 * Create Network Connection Point, import local *ionapi file
 * Create Data Flow to process received documents
+  
 **On Sending Tenant**
 * Create Network Connection Point, import remote *ionapi file
 * Create Data Flow to generate documents to be sent
+  
 **BiDirectional**
 * Same steps to be repeated vice versa
 
@@ -64,6 +66,7 @@ For Infor Employees:
 ![image](https://user-images.githubusercontent.com/82956918/136528796-09699c4a-56dc-4b86-9194-bec158fdb46c.png)
 
 ### ION Desk - Data Lake Flow (receiving)
+**On Receiving Tenant:**
 * Create Data Lake Flow (demo only)
 * Select Documents (LN_Enum & LN_tcibd001)
 
@@ -84,6 +87,7 @@ For Infor Employees:
 ![image](https://user-images.githubusercontent.com/82956918/136529111-f80af346-2dc3-44db-b9f0-a6471c0ec047.png)
 
 ### ION Desk - Document Flow (sending)
+**On Sending Tenant:**
 * Create Document Flow
 * Select Documents (LN_Enum & LN_tcibd001)
 
@@ -127,6 +131,7 @@ For Infor Employees:
 ![image](https://user-images.githubusercontent.com/82956918/136529709-8b453a15-4edd-49ed-898d-81501d43a777.png)
 
 ### ION Desk - Document Flow (receiving)
+**On the Receiving Tenant:**
 * Create Document Flow
 * Select Documents (Process.ItemMaster)
   
@@ -146,6 +151,7 @@ For Infor Employees:
 ![image](https://user-images.githubusercontent.com/82956918/136529942-5c084a58-a851-4ee2-abe7-8d9254931e8f.png)
 
 ### ION Desk - Document Flow (sending)
+**On the Sending Tenant:**
 * Create Document Flow (IMS via ION API is used to publish documents to the Connection Point)
 * Select Documents (Process.ItemMaster)
 
