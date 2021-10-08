@@ -154,7 +154,7 @@ For Infor Employees:
 
 ### ION Desk - OneView (testing)
 * Trigger Documents in sending Application
-* Check OneView and receiving Application
+* Check OneView on both Tenants and receiving Application if document is received
   
 ![image](https://user-images.githubusercontent.com/82956918/136530464-3e978f6e-6ce4-477f-b952-9aa71743e45e.png)
 ![image](https://user-images.githubusercontent.com/82956918/136530483-3ca9ee13-c7d1-4315-b4e5-7349c071d593.png)
