@@ -53,7 +53,7 @@ This repository contains recordings to demo the ION Network Connector
 ![image](https://user-images.githubusercontent.com/82956918/136524553-81be9385-2ea0-4658-bfb2-14547de5ac4a.png)
 
 ### ION Desk - Network Connector (receiving)
-**On Receiving Tenant: **
+**On Receiving Tenant:**
 * Create Connection Point (ION Network)
 * Direction: Receive from Partner
 * Import Local *.ionapi
@@ -64,7 +64,8 @@ This repository contains recordings to demo the ION Network Connector
 * Select Documents
 
 ### ION Desk - Network Connector (sending)
-* On Sending Tenant: Create Connection Point (ION Network)
+**On Sending Tenant:**
+* Create Connection Point (ION Network)
 * Direction: Send to Partner
 * Import Remote *.ionapi
 * Documents to be sent
@@ -85,15 +86,36 @@ This repository contains recordings to demo the ION Network Connector
   * Send to EDUGDENA031 & Receive from Partner MingleTest1
   
 ### ION API - Authorized App (Backend Service)
-* On Receiving Tenant
+**On Receiving Tenant:**
 * Create Authorized App of type Backend Service
 * Download Credentials
 * Create Service Account
 * Download *.ionapi file
   
 ### ION Desk - Network Connector ( BiDirectional
-* On the Receiving Tenant
+**On the Receiving Tenant:**
 * Change Connection Point (Network Connector)
 * Direction: BiDirectional was “Send to Partner”
 * Import Local *.ionapi
 * Documents to be received
+
+### ION Desk - Document Flow (receiving)
+* Create Document Flow
+* Select Documents
+  
+### ION Desk - Network Connector (sending)
+**On the Sending Tenant:**
+* Change Connection Point (Network Connector)
+* Direction: BiDirectional was “Receive from Partner”
+* Import Remote *.ionapi
+* Documents
+* Testing connection is possible now
+  
+### ION Desk - Document Flow (sending)
+* Create Document Flow
+* Select Documents
+  
+### ION Desk - OneView (testing)
+* Trigger Documents in sending Application
+* Check OneView and receiving Application
+  
