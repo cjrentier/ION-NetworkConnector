@@ -1,5 +1,5 @@
 # ION - Network Connector
-This repository contains recordings to demo the ION Network Connector
+This repository contains a demo of the ION Network Connector
 
 ## Infor OS - ION Network Connectors: 
 
