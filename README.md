@@ -45,7 +45,7 @@ For Infor Employees:
 **On Receiving Tenant**
 * Create Authorized App of type Backend Service
 * Download Credentials
-* Create Service Account
+* Create Service Account (use a Service User)
 * Download *.ionapi file
 
 ![image](https://user-images.githubusercontent.com/82956918/136524553-81be9385-2ea0-4658-bfb2-14547de5ac4a.png)
@@ -110,7 +110,7 @@ For Infor Employees:
 **On Receiving Tenant:**
 * Create Authorized App of type Backend Service
 * Download Credentials
-* Create Service Account
+* Create Service Account (use a Service User)
 * Download *.ionapi file
 
 ![image](https://user-images.githubusercontent.com/82956918/136529506-847915f3-f241-4b55-9acb-648db79b5748.png)
