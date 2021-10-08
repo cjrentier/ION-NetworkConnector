@@ -25,7 +25,7 @@ For Infor Employees:
 ## DEMO: using ION Network connection point (Unidirectional)
 * Connecting Infor OS deployments, Two Multi Tenants
 * First Unidirectional
-* Send to Partner MingleTest1 & Receive from EDUGDENA031
+  * Send to Partner MingleTest1 & Receive from EDUGDENA031
 
 ![2021-10-08 10_15_45-Infor OS - ION Network Connectors v1 pptx - PowerPoint](https://user-images.githubusercontent.com/82956918/136522294-1f8e3692-4af6-40e9-aa52-5f7e911fe9c4.png)
 ### Summary
