@@ -22,8 +22,8 @@ For Infor Employees:
 * The Network Connection Point does use the IMS messages
   * IONSERVICES/api/ion/messaging/service/ping (to check if the remote ION API is up and running)
   * IONSERVICES/api/ion/messaging/service/versions (to check the version remotely)
-  * IONSERVICES/api/ion/messaging/service/v3/lid://infor.iondesk.iondesk/<your Backend Service Name>/acceptedDocuments (to check the acceptedDocuments, what else:-) )
-  * IONSERVICES/api/ion/messaging/service/v3/multipartMessage (to send the BOD message )
+  * IONSERVICES/api/ion/messaging/service/v3/lid://infor.iondesk.iondesk/<your Backend Service Name>/acceptedDocuments (to check the acceptedDocuments, what else.. )
+  * IONSERVICES/api/ion/messaging/service/v3/multipartMessage (to send the BOD finally )
 
 ## Connecting Infor OS deployments, Multi Tenant & On Premises
 * Bidirectional or Unidirectional (Receive from/ Send to Partner) integration
