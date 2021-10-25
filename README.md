@@ -31,7 +31,7 @@ For Infor Employees:
 * The Network Connection Point is based on using the IMS messages
   * IONSERVICES/api/ion/messaging/service/ping (to check if the remote ION API is up and running)
   * IONSERVICES/api/ion/messaging/service/versions (to check the version remotely)
-  * IONSERVICES/api/ion/messaging/service/v3/lid://infor.iondesk.iondesk/<your Backend Service Name>/acceptedDocuments (to check the acceptedDocuments, what else.. )
+  * IONSERVICES/api/ion/messaging/service/v3/lid://infor.iondesk.iondesk/\<your Backend Service Name\>/acceptedDocuments (to check the acceptedDocuments, what else.. )
   * IONSERVICES/api/ion/messaging/service/v3/multipartMessage (to send the BOD finally )
 
 ![ION to ION Configuration](https://user-images.githubusercontent.com/82956918/138727131-ac9a72b6-c518-48f3-93d3-49adfd17d7a0.png)
