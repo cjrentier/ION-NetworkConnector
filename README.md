@@ -27,12 +27,16 @@ For Infor Employees:
 * Create Incident to open Single Tenant for traffic from that specific Multi-Tenant only. 
 * Specify the relevant IP-addresses to be put on the Whitelist found at: https://wiki.infor.com/confluence/display/MTIOS/MT+Application+NAT+List
 * If Single Tenant is not opened correctly for traffic from that MT the testing the Network Connector will result: Error occurred while generating Oauth access token for 'https://<customer>dev.cloud.infor.com:7443'. Reason: Unable to get Oauth20 token due to : Connection timed out
-* The Network Connection Point does use the IMS messages
+* The Network Connection Point is using the ION API for connectivity and authentication
+* The Network Connection Point is based on using the IMS messages
   * IONSERVICES/api/ion/messaging/service/ping (to check if the remote ION API is up and running)
   * IONSERVICES/api/ion/messaging/service/versions (to check the version remotely)
   * IONSERVICES/api/ion/messaging/service/v3/lid://infor.iondesk.iondesk/<your Backend Service Name>/acceptedDocuments (to check the acceptedDocuments, what else.. )
   * IONSERVICES/api/ion/messaging/service/v3/multipartMessage (to send the BOD finally )
 
+![ION to ION Configuration](https://user-images.githubusercontent.com/82956918/138727131-ac9a72b6-c518-48f3-93d3-49adfd17d7a0.png)
+
+ 
 ## Connecting Infor OS deployments, Multi Tenant & On Premises
 * Bidirectional or Unidirectional (Receive from/ Send to Partner) integration
 * Using ION API as proxy (authorized app)
