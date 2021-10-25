@@ -10,8 +10,11 @@ In the example we combine two different Multi Tenants of Infor OS, similar can b
 When using the Network Connector to connect:
 * Multi Tenant environments running in different regions
 * Multi Tenant environments from different customers
-* Multi Tenant to On-Premises, when receiving messages in On-Premises this requires the customer to open port 7443 and 443 for traffic from that Tenant.
-* Multi Tenant to Single Tenant, when receiving messages in Single Tenant this requires Cloud Ops to open port 7443 and 443 for traffic from that Tenant.
+* Multi Tenant to On-Premises, when receiving messages in On-Premises:
+  * this requires the customer to open port 7443 and 443 for traffic from that Tenant
+  * additionally the certificate used for Infor OS must have a CA signed certificate
+* Multi Tenant to Single Tenant, when receiving messages in Single Tenant 
+  * this requires Cloud Ops to open port 7443 and 443 for traffic from that Tenant.
   
 Check https://docs.infor.com for documentation
 
