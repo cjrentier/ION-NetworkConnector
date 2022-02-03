@@ -1,5 +1,6 @@
 # ION - Network Connector
-This repository contains a demo of the ION Network Connector
+This repository contains a demo of the ION Network Connector.
+This demos the description found on ![docs.infor.com](https://docs.infor.com/ion/2022.x/en-us/iondeskceug_cloud_osm/default.html?helpcontent=uvj1542287222737.html)
 
 ## Infor OS - ION Network Connectors: 
 
