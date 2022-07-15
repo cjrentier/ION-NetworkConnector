@@ -45,7 +45,7 @@ For Infor Employees:
   * Authentication via port 443: "pu": "https://inforos.acme.com/InforIntSTS/"
   * ION API via port 7443: "iu": "https://inforos.acme.com:7443"
 * On Multi Tenant:
-  * Authentication via port 443: "pu": "https://mingle-sso.inforcloudsuite.com:443/\<Tenant Name\>/as/",
+  * Authentication via port 443: "pu": "https://mingle-sso.inforcloudsuite.com:443/{TenantName}/as/",
   * ION API via port 7443: "iu": "https://mingle-ionapi.inforcloudsuite.com"
 
 ![2022-07-15 14_14_02-Infor OS - ION Network Connectors v1 pptx - PowerPoint](https://user-images.githubusercontent.com/82956918/179220947-0dc4c06e-5a7b-4ab4-819b-68bdfc6a9db0.png)
