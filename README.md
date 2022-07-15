@@ -43,7 +43,7 @@ For Infor Employees:
 * Using ION API as proxy (authorized app)
 * On Premises and Single Tenant using port 7443
 
-![2021-10-08 10_21_48-Infor OS - ION Network Connectors v1 pptx - PowerPoint](https://user-images.githubusercontent.com/82956918/136523163-56ce72c5-fc3b-4f7e-a892-780550df1f7f.png)
+![2022-07-15 14_14_02-Infor OS - ION Network Connectors v1 pptx - PowerPoint](https://user-images.githubusercontent.com/82956918/179220947-0dc4c06e-5a7b-4ab4-819b-68bdfc6a9db0.png)
 ## DEMO: using ION Network connection point (Unidirectional)
 * Connecting Infor OS deployments, Two Multi Tenants
 * First Unidirectional
