@@ -1,5 +1,5 @@
 # ION - Network Connector
-This repository contains a demo of the ION Network Connector, the documentation can be found on ![docs.infor.com](https://docs.infor.com/ion/latest/en-us/iondeskceug_cloud_osm/default.html), go to Connect Modeling > ION Network connection point
+This repository contains a demo of the ION Network Connector, the documentation can be found on https://docs.infor.com/ion/latest/en-us/iondeskceug_cloud_osm/default.html, go to Connect Modeling > ION Network connection point
 
 ## Infor OS - ION Network Connectors: 
 
