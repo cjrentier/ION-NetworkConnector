@@ -7,13 +7,14 @@ Connecting two different Infor OS environments to each other via ION Network Con
 
 In the example we combine two different Multi Tenants of Infor OS, similar can be done for Single Tenant or On-Premises.
 
-When using the Network Connector to connect:
+The Network Connector can be used to connect:
 * To replace the ION CC (CloudConnector)
   * upgrade to ION CE and start using the Network Connector
 * Multi Tenant environments running in different regions
 * Multi Tenant environments from different customers
 * Multi Tenant to On-Premises, when receiving messages in On-Premises:
-  * this requires the customer to open port 7443 and 443 for traffic from that Tenant
+  * this requires the customer to have Infor OS installed with Alias which is registered on the Internet, not just on the customers Intranet!
+  * additionally open port 7443 and 443 for traffic from that Tenant to the local Infor OS
   * additionally the certificate used for Infor OS must have a CA signed certificate
 * Multi Tenant to Single Tenant, when receiving messages in Single Tenant 
   * this requires Cloud Ops to open port 7443 and 443 for traffic from that Tenant.
