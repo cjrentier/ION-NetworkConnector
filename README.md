@@ -20,6 +20,7 @@ The Network Connector can be used to connect:
   * this requires Cloud Ops to open port 7443 and 443 for traffic from that Tenant.
   
 Check https://docs.infor.com for documentation, search for "Enterprise Connector prerequisites"
+
 Support for Network connectors in ION:
 * 2020-12 introduction of the network connection point
 * 2021-06 support pausing of network connection points
