@@ -16,6 +16,18 @@ The Network Connector can be used to connect:
   * this requires the customer to have Infor OS installed with Alias which is registered on the Internet, not just on the customers Intranet!
   * additionally open port 7443 and 443 for traffic from that Tenant to the local Infor OS
   * additionally the certificate used for Infor OS must have a CA signed certificate
+* In case the Infor OS server running On-Premises is behind a gateway or any other network device 
+  * ensure to have the right IP-addresses of the tenant in your region whitelisted
+  * additionally keep the traffic for acceptedDocuments URL encoded!! Check the LID of your Network Connector in the On-Premises server, for example: 
+  ![image](https://user-images.githubusercontent.com/82956918/236443458-8fd9a9af-18ef-4012-98db-baae19a0c626.png)
+  * The Multi Tenant server will send a GET message using the URL encoded Logical ID.
+  * e.g. https://inforos.acme.com/InforIntSTS/IONSERVICES/api/ion/messaging/service/v3/lid%3A%2F%2Finfor.iondesk.iondesk%2Fnetworkconnector/acceptedDocuments
+  * having a body like
+    ```
+    {
+      "logicalId": "lid://infor.iondesk.iondesk/networkconnector"
+    }
+    ```
 * Multi Tenant to Single Tenant, when receiving messages in Single Tenant 
   * this requires Cloud Ops to open port 7443 and 443 for traffic from that Tenant.
   
@@ -39,10 +51,10 @@ For Infor Employees:
 ![ION to ION Configuration](https://user-images.githubusercontent.com/82956918/138727131-ac9a72b6-c518-48f3-93d3-49adfd17d7a0.png)
 
  
-## Connecting Infor OS deployments, Multi Tenant & On Premises
+## Connecting Infor OS deployments, Multi Tenant & On-Premises
 * Bidirectional or Unidirectional (Receive from/ Send to Partner) integration
 * Using ION API as proxy (authorized app)
-* On Premises and Single Tenant:
+* On-Premises and Single Tenant:
   * Authentication via port 443: "pu": "https://inforos.acme.com/InforIntSTS/"
   * ION API via port 7443: "iu": "https://inforos.acme.com:7443"
 * On Multi Tenant:
@@ -50,6 +62,7 @@ For Infor Employees:
   * ION API via port 7443: "iu": "https://mingle-ionapi.yourinforcloudsuite.com"
 
 ![2022-07-15 14_14_02-Infor OS - ION Network Connectors v1 pptx - PowerPoint](https://user-images.githubusercontent.com/82956918/179220947-0dc4c06e-5a7b-4ab4-819b-68bdfc6a9db0.png)
+ 
 ## DEMO: using ION Network connection point (Unidirectional)
 * Connecting Infor OS deployments, Two Multi Tenants
 * First Unidirectional
