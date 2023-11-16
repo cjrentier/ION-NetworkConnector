@@ -1,5 +1,6 @@
 # ION - Network Connector
-This repository contains a demo of the ION Network Connector, the documentation can be found on https://docs.infor.com/ion/latest/en-us/iondeskceug_cloud_osm/default.html, go to Connect Modeling > ION Network connection point
+This repository contains a demo of the ION Network Connector, the documentation can be found on https://docs.infor.com/ion/latest/en-us/iondeskceug_cloud_osm/default.html, go to Connect Modeling > ION Network connection point.
+Below procedure partly applies to accessing the ION API Gateway for other API calls.
 
 ## Infor OS - ION Network Connectors: 
 
@@ -12,12 +13,16 @@ The Network Connector can be used to connect:
   * upgrade to ION CE and start using the Network Connector
 * Multi Tenant environments running in different regions
 * Multi Tenant environments from different customers
-* Multi Tenant to On-Premises, when receiving messages in On-Premises:
-  * this requires the customer to have Infor OS installed with Alias which is registered on the Internet, not just on the customers Intranet!
-  * additionally open port 7443 and 443 for traffic from that Tenant to the local Infor OS
-  * additionally the certificate used for Infor OS must have a CA signed certificate
-* In case the Infor OS server running On-Premises is behind a gateway or any other network device 
-  * ensure to have the right IP-addresses of the tenant in your region whitelisted
+* Multi Tenant to On-Premises, when receiving messages in On-Premises
+  * In case the Infor OS On-Premises was installed with Alias which is registered on the Internet and with a CA signed public certificate:
+   * open port 7443 and 443 for traffic from that Tenant to the Infor OS On-Premises
+  * In case the Infor OS On-Premises was installed with customer internal Alias which is NOT registered on the Internet and with a internal certificate:
+   * create a public alias and corresponding certificate which can be used via the Internet publicly
+   * replace the internal names in the *.ionapi file with public names
+   * in the network device translate the public URL to the local URL for inbound traffic and the other way round for outgoing messages
+   * open port 7443 and 443 for traffic from that Tenant to the Infor OS On-Premises
+* Remark: the Infor OS server running On-Premises should be exposed to the internet in a professional way only, using WAP, a gateway or any other network device
+  * ensure to have the right IP-addresses of the MT tenant in your region or the client calling the API whitelisted
   * additionally keep the traffic for acceptedDocuments URL encoded!! Check the LID of your Network Connector in the On-Premises server, for example: 
   ![image](https://user-images.githubusercontent.com/82956918/236443458-8fd9a9af-18ef-4012-98db-baae19a0c626.png)
   * The Multi Tenant server will send a GET message using the URL encoded Logical ID.
