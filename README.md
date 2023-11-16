@@ -15,12 +15,12 @@ The Network Connector can be used to connect:
 * Multi Tenant environments from different customers
 * Multi Tenant to On-Premises, when receiving messages in On-Premises
   * In case the Infor OS On-Premises was installed with Alias which is registered on the Internet and with a CA signed public certificate:
-   * open port 7443 and 443 for traffic from that Tenant to the Infor OS On-Premises
+    * open port 7443 and 443 for traffic from that Tenant to the Infor OS On-Premises
   * In case the Infor OS On-Premises was installed with customer internal Alias which is NOT registered on the Internet and with a internal certificate:
-   * create a public alias and corresponding certificate which can be used via the Internet publicly
-   * replace the internal names in the *.ionapi file with public names
-   * in the network device translate the public URL to the local URL for inbound traffic and the other way round for outgoing messages
-   * open port 7443 and 443 for traffic from that Tenant to the Infor OS On-Premises
+    * create a public alias and corresponding certificate which can be used via the Internet publicly
+    * replace the internal names in the *.ionapi file with public names
+    * in the network device translate the public URL to the local URL for inbound traffic and the other way round for outgoing messages
+    * open port 7443 and 443 for traffic from that Tenant to the Infor OS On-Premises
 * Remark: the Infor OS server running On-Premises should be exposed to the internet in a professional way only, using WAP, a gateway or any other network device
   * ensure to have the right IP-addresses of the MT tenant in your region or the client calling the API whitelisted
   * additionally keep the traffic for acceptedDocuments URL encoded!! Check the LID of your Network Connector in the On-Premises server, for example: 
